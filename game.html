@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя перша гра</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="conteiner">
+    <div class="kos">
+ <h1>Гра з цифрами</h1>
+ <div id="game">
+     <div id="timer">60</div>
+     <div id="game-board"></div>
+     <button id="restart-btn">Почати з початку</button>
+ </div>
+    </div>
+</div>
+<div id="stats">
+    <h2 class="h2">Статистика</h2>
+    <table id="stats-table">
+        <thead>
+        <tr>
+            <th>Гра</th>
+            <th>Результат</th>
+            <th>Час гри (сек)</th>
+        </tr>
+        </thead>
+        <tbody id="stats-body"></tbody>
+    </table>
+</div>
+
+<div id="congrats-modal">
+    <div class="modal-content">
+        <h2>Вітаємо!</h2>
+        <p>Ви вибрали всі числа в правильній послідовності!</p>
+        <button id="play-again-btn">Грати знову</button>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
